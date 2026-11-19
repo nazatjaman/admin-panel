@@ -1,0 +1,56 @@
+/* ADMIN styles
+   Owner: Admin member
+   Used by: admin/*.html
+   Only this person edits this file.
+   (base look comes from shared/css/base.css, this file only adds what the admin pages need) */
+
+/* ---------- Charts ---------- */
+
+/* Bar chart: donors per blood group */
+.bars { display: flex; gap: 8px; align-items: flex-end; height: 170px; }
+.bars div { flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; }
+.bars i { display: block; border-radius: 6px 6px 0 0; background: linear-gradient(#E5384F, #B3122B); min-height: 3px; }
+.bars small { color: #6B7194; }
+
+/* Round chart: requests by status or urgency */
+.dn { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.dn > div { width: 120px; height: 120px; border-radius: 50%; display: grid; place-items: center; }
+.dn > div span { width: 76px; height: 76px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-weight: 700; font-size: 20px; }
+.dn ul { list-style: none; line-height: 2.1; }
+.dn li i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; }
+
+/* Horizontal bars: requests by area */
+.hb { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.hb span { width: 104px; color: #6B7194; }
+.hb div { flex: 1; }
+.hb b { width: 30px; text-align: right; }
+
+/* ---------- Layout helpers ---------- */
+.toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+.toolbar .inp { max-width: 300px; }
+.toolbar .tabs { margin-bottom: 0; }
+
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.actions.end { justify-content: flex-end; }
+
+.empty { text-align: center; color: #6B7194; padding: 24px 0; }
+.gap-bottom { margin-bottom: 16px; }
+
+/* ---------- Users table ---------- */
+.who b { display: block; }
+.who small { color: #6B7194; }
+
+/* ---------- Reports ---------- */
+.clickable { cursor: pointer; }
+.clickable:hover td { background: #FFF7F8; }
+tr.picked td { background: #FFF7F8; }
+.quote { background: #F5F6FA; border-radius: 12px; padding: 12px; margin: 12px 0; }
+.note { color: #6B7194; font-size: 13px; margin-bottom: 14px; }
+
+/* ---------- Notices ---------- */
+.notice-icon { background: #FDECEF; color: #C8102E; }
+
+/* ---------- Form validation (same classes as the registration form) ---------- */
+.error { display: block; color: red; font-size: 13px; margin-top: 4px; }
+.errorBorder { border-color: red !important; }
+.successBorder { border-color: green !important; }
